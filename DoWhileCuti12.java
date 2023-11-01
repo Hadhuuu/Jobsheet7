@@ -18,12 +18,16 @@ public class DoWhileCuti12 {
                 if(jumlahHari <= jatahCuti) {
                     jatahCuti -= jumlahHari;
                     System.out.println("Sisa jatah cuti : " + jatahCuti);
-                } else {
+                }
+                else {
                     System.out.println(" Dikarenakan Sisa jatah cuti Anda tidak mencukupi");
                     System.out.println("Anda bisa hanya mendapatkan cuti maksimal " + jatahCuti + " Hari");
                     // break;
                 }
-            }
+            } else if (konfirmasi.equalsIgnoreCase("t")) {
+                System.out.println("Baik, sisa jatah cuti anda adalah " +jatahCuti+ " hari");
+                break;
+                }
         } while (jatahCuti > 0);
     }
 }
